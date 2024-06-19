@@ -1,0 +1,61 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+buffer                                                                            0x0260      64
+SP                                                                                0x02A0       4
+temp                                                                              0x02A4       4
+error                                                                             0x02A8       4
+last_error                                                                        0x02AC       4
+last_iterm                                                                        0x02B0       4
+kp                                                                                0x02B4       4
+ki                                                                                0x02B8       4
+kd                                                                                0x02BC       4
+pterm                                                                             0x02C0       4
+iterm                                                                             0x02C4       4
+dterm                                                                             0x02C8       4
+D                                                                                 0x02CC       4
+_base_y                                                                           0x02D0       4
+_seed                                                                             0x02D4       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+D2                                                                                R4,R5        2
+LD                                                                                R6,R7        2
+HD                                                                                R8,R9        2
+_lcd_x                                                                            R11          1
+_lcd_y                                                                            R10          1
+_lcd_maxx                                                                         R13          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+adc_isr                                                                           0x0008F     62
+main                                                                              0x000CD    283
+_lcd_delay_G100                                                                   0x001E8      4
+_lcd_ready                                                                        0x001EC     17
+_lcd_write_nibble_G100                                                            0x001FD     10
+_lcd_write_data                                                                   0x00207     15
+_lcd_read_nibble_G100                                                             0x00216      9
+lcd_read_byte0_G100                                                               0x0021F      9
+lcd_gotoxy                                                                        0x00228     16
+lcd_clear                                                                         0x00238     19
+lcd_putchar                                                                       0x0024B     26
+lcd_puts                                                                          0x00265     17
+_long_delay_G100                                                                  0x00276      5
+_lcd_init_write_G100                                                              0x0027B     12
+lcd_init                                                                          0x00287     51
+put_buff_G101                                                                     0x002BA     58
+_ftoe_G101                                                                        0x002F4    210
+_print_G101                                                                       0x003C6    538
+sprintf                                                                           0x005E0     52
+strcpyf                                                                           0x00614     13
+strlen                                                                            0x00621     12
+strlenf                                                                           0x0062D     13
+ftrunc                                                                            0x0063A     49
+floor                                                                             0x0066B     23
+ftoa                                                                              0x00682    158
